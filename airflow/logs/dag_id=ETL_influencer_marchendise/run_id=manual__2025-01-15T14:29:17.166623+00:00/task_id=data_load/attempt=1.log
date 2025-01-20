@@ -1,0 +1,27 @@
+[2025-01-15T14:29:33.389+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: ETL_influencer_marchendise.data_load manual__2025-01-15T14:29:17.166623+00:00 [queued]>
+[2025-01-15T14:29:33.394+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: ETL_influencer_marchendise.data_load manual__2025-01-15T14:29:17.166623+00:00 [queued]>
+[2025-01-15T14:29:33.394+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2025-01-15T14:29:33.395+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 2
+[2025-01-15T14:29:33.395+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2025-01-15T14:29:33.401+0000] {taskinstance.py:1389} INFO - Executing <Task(BashOperator): data_load> on 2025-01-15 14:29:17.166623+00:00
+[2025-01-15T14:29:33.403+0000] {standard_task_runner.py:52} INFO - Started process 651 to run task
+[2025-01-15T14:29:33.405+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'ETL_influencer_marchendise', 'data_load', 'manual__2025-01-15T14:29:17.166623+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/P2M3_afif_makruf_DAG.py', '--cfg-path', '/tmp/tmpc3sd5wuq', '--error-file', '/tmp/tmpjaizyzm6']
+[2025-01-15T14:29:33.406+0000] {standard_task_runner.py:80} INFO - Job 4: Subtask data_load
+[2025-01-15T14:29:33.436+0000] {task_command.py:371} INFO - Running <TaskInstance: ETL_influencer_marchendise.data_load manual__2025-01-15T14:29:17.166623+00:00 [running]> on host 02f85800a32d
+[2025-01-15T14:29:33.469+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=afif
+AIRFLOW_CTX_DAG_ID=ETL_influencer_marchendise
+AIRFLOW_CTX_TASK_ID=data_load
+AIRFLOW_CTX_EXECUTION_DATE=2025-01-15T14:29:17.166623+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-01-15T14:29:17.166623+00:00
+[2025-01-15T14:29:33.470+0000] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2025-01-15T14:29:33.470+0000] {subprocess.py:74} INFO - Running command: ['/bin/bash', '-c', 'sudo -u *** python /opt/***/dags/load.py']
+[2025-01-15T14:29:33.474+0000] {subprocess.py:85} INFO - Output:
+[2025-01-15T14:29:42.237+0000] {subprocess.py:96} INFO - Command exited with return code 0
+[2025-01-15T14:29:42.288+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=ETL_influencer_marchendise, task_id=data_load, execution_date=20250115T142917, start_date=20250115T142933, end_date=20250115T142942
+[2025-01-15T14:29:42.341+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-01-15T14:29:42.363+0000] {local_task_job.py:279} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,263 @@
+[2025-01-16T07:42:14.763+0000] {processor.py:153} INFO - Started process (PID=194) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:42:14.766+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:42:14.767+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:42:14.767+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:42:14.856+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:42:14.946+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:42:14.946+0000] {manager.py:508} INFO - Created Permission View: can delete on DAG:ETL_influencer_marchendise
+[2025-01-16T07:42:14.958+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:42:14.958+0000] {manager.py:508} INFO - Created Permission View: can read on DAG:ETL_influencer_marchendise
+[2025-01-16T07:42:14.968+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:42:14.968+0000] {manager.py:508} INFO - Created Permission View: can edit on DAG:ETL_influencer_marchendise
+[2025-01-16T07:42:14.970+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:42:14.970+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:42:14.977+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:42:14.977+0000] {dag.py:2448} INFO - Creating ORM DAG for ETL_influencer_marchendise
+[2025-01-16T07:42:14.988+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:42:14.988+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:42:15.002+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.243 seconds
+[2025-01-16T07:42:45.289+0000] {processor.py:153} INFO - Started process (PID=210) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:42:45.290+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:42:45.291+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:42:45.290+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:42:45.305+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:42:45.346+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:42:45.345+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:42:45.363+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:42:45.363+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:42:45.370+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.090 seconds
+[2025-01-16T07:43:15.629+0000] {processor.py:153} INFO - Started process (PID=225) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:43:15.631+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:43:15.633+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:43:15.632+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:43:15.650+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:43:15.685+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:43:15.685+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:43:15.702+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:43:15.702+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:43:15.709+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.087 seconds
+[2025-01-16T07:43:45.919+0000] {processor.py:153} INFO - Started process (PID=240) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:43:45.921+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:43:45.922+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:43:45.922+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:43:45.933+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:43:45.957+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:43:45.957+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:43:45.985+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:43:45.984+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:43:45.995+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.081 seconds
+[2025-01-16T07:44:16.289+0000] {processor.py:153} INFO - Started process (PID=255) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:44:16.309+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:44:16.310+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:44:16.310+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:44:16.323+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:44:16.358+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:44:16.358+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:44:16.375+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:44:16.375+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:44:16.381+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.104 seconds
+[2025-01-16T07:44:46.597+0000] {processor.py:153} INFO - Started process (PID=449) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:44:46.599+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:44:46.600+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:44:46.599+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:44:46.613+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:44:46.646+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:44:46.646+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:44:46.662+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:44:46.662+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:44:46.668+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.081 seconds
+[2025-01-16T07:45:16.978+0000] {processor.py:153} INFO - Started process (PID=464) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:45:16.979+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:45:16.980+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:45:16.979+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:45:17.009+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:45:17.074+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:45:17.074+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:45:17.087+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:45:17.087+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:45:17.098+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.124 seconds
+[2025-01-16T07:45:47.357+0000] {processor.py:153} INFO - Started process (PID=479) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:45:47.358+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:45:47.359+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:45:47.359+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:45:47.379+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:45:47.406+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:45:47.406+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:45:47.425+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:45:47.425+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:45:47.434+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.085 seconds
+[2025-01-16T07:46:17.695+0000] {processor.py:153} INFO - Started process (PID=494) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:46:17.697+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:46:17.698+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:46:17.698+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:46:17.716+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:46:17.751+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:46:17.751+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:46:17.769+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:46:17.769+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:46:17.776+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.086 seconds
+[2025-01-16T07:46:47.978+0000] {processor.py:153} INFO - Started process (PID=892) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:46:47.980+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:46:47.981+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:46:47.981+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:46:48.001+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:46:48.039+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:46:48.038+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:46:48.054+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:46:48.054+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:46:48.064+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.095 seconds
+[2025-01-16T07:47:18.337+0000] {processor.py:153} INFO - Started process (PID=907) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:47:18.339+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:47:18.340+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:47:18.340+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:47:18.365+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:47:18.407+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:47:18.407+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:47:18.425+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:47:18.425+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:47:18.431+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.101 seconds
+[2025-01-16T07:47:48.670+0000] {processor.py:153} INFO - Started process (PID=1308) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:47:48.672+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:47:48.673+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:47:48.673+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:47:48.693+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:47:48.718+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:47:48.718+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:47:48.741+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:47:48.741+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:47:48.749+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.087 seconds
+[2025-01-16T07:48:19.043+0000] {processor.py:153} INFO - Started process (PID=1323) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:48:19.044+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:48:19.045+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:48:19.045+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:48:19.065+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:48:19.123+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:48:19.123+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:48:19.145+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:48:19.145+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:48:19.154+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.118 seconds
+[2025-01-16T07:48:49.366+0000] {processor.py:153} INFO - Started process (PID=1338) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:48:49.368+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:48:49.370+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:48:49.369+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:48:49.393+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:48:49.441+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:48:49.441+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:48:49.459+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:48:49.459+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:48:49.467+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.110 seconds
+[2025-01-16T07:49:19.767+0000] {processor.py:153} INFO - Started process (PID=1353) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:49:19.770+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:49:19.772+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:49:19.772+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:49:19.806+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:49:19.841+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:49:19.841+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:49:19.869+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:49:19.869+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:49:19.876+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.112 seconds
+[2025-01-16T07:49:50.106+0000] {processor.py:153} INFO - Started process (PID=1368) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:49:50.108+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:49:50.112+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:49:50.111+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:49:50.138+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:49:50.185+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:49:50.185+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:49:50.204+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:49:50.204+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:49:50.218+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.131 seconds
+[2025-01-16T07:50:20.486+0000] {processor.py:153} INFO - Started process (PID=1383) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:50:20.488+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:50:20.490+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:50:20.489+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:50:20.511+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:50:20.570+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:50:20.570+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:50:20.603+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:50:20.603+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:50:20.613+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.135 seconds
+[2025-01-16T07:50:50.923+0000] {processor.py:153} INFO - Started process (PID=1398) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:50:50.926+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:50:50.928+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:50:50.928+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:50:50.957+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:50:50.990+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:50:50.990+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:50:51.017+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:50:51.017+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:50:51.024+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.107 seconds
+[2025-01-16T07:51:21.286+0000] {processor.py:153} INFO - Started process (PID=1413) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:51:21.288+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:51:21.289+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:51:21.289+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:51:21.319+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:51:21.359+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:51:21.358+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:51:21.382+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:51:21.382+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:51:21.394+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.119 seconds
+[2025-01-16T07:51:51.589+0000] {processor.py:153} INFO - Started process (PID=1428) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:51:51.591+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:51:51.592+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:51:51.592+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:51:51.616+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:51:51.657+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:51:51.657+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:51:51.689+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:51:51.689+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:51:51.699+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.117 seconds
+[2025-01-16T07:52:21.954+0000] {processor.py:153} INFO - Started process (PID=1443) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:52:21.956+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:52:21.957+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:52:21.957+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:52:21.974+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:52:22.027+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:52:22.027+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:52:22.047+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:52:22.047+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:52:22.055+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.106 seconds
+[2025-01-16T07:52:52.270+0000] {processor.py:153} INFO - Started process (PID=1458) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:52:52.272+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:52:52.273+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:52:52.273+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:52:52.310+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:52:52.358+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:52:52.358+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:52:52.378+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:52:52.378+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:52:52.385+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.121 seconds
+[2025-01-16T07:53:22.613+0000] {processor.py:153} INFO - Started process (PID=1473) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:53:22.615+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:53:22.615+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:53:22.615+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:53:22.646+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:53:22.697+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:53:22.697+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:53:22.719+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:53:22.719+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:53:22.735+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.130 seconds
+[2025-01-16T07:53:42.916+0000] {processor.py:153} INFO - Started process (PID=1488) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:53:42.918+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:53:42.918+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:53:42.918+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:53:42.932+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:53:43.024+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:53:43.023+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:53:43.050+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:53:43.049+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:53:43.058+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.150 seconds
+[2025-01-16T07:54:13.200+0000] {processor.py:153} INFO - Started process (PID=1503) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:54:13.201+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:54:13.202+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:54:13.202+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:54:13.211+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:54:13.251+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:54:13.251+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:54:13.284+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:54:13.284+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:54:13.291+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.095 seconds
+[2025-01-16T07:54:43.463+0000] {processor.py:153} INFO - Started process (PID=1518) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:54:43.464+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:54:43.464+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:54:43.464+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:54:43.475+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:54:43.506+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:54:43.506+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:54:43.527+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:54:43.527+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:54:43.534+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.076 seconds
+[2025-01-16T07:55:13.752+0000] {processor.py:153} INFO - Started process (PID=1713) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:55:13.754+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:55:13.756+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:55:13.756+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:55:13.769+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:55:13.788+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:55:13.788+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:55:13.801+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:55:13.801+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:55:13.809+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.059 seconds
+[2025-01-16T07:55:44.020+0000] {processor.py:153} INFO - Started process (PID=1956) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:55:44.022+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:55:44.023+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:55:44.023+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:55:44.038+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:55:44.101+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:55:44.100+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:55:44.120+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:55:44.120+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:55:44.128+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.114 seconds
+[2025-01-16T07:56:14.330+0000] {processor.py:153} INFO - Started process (PID=1971) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:56:14.333+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:56:14.333+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:56:14.333+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:56:14.349+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:56:14.409+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:56:14.409+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:56:14.426+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:56:14.426+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:56:14.433+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.109 seconds
+[2025-01-16T07:56:44.592+0000] {processor.py:153} INFO - Started process (PID=1986) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:56:44.596+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:56:44.597+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:56:44.597+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:56:44.617+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:56:44.655+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:56:44.655+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:56:44.670+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:56:44.670+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:56:44.677+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.097 seconds
+[2025-01-16T07:57:14.954+0000] {processor.py:153} INFO - Started process (PID=2001) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:57:14.956+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:57:14.957+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:57:14.957+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:57:14.972+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:57:15.027+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:57:15.027+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:57:15.057+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:57:15.057+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:57:15.064+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.115 seconds
+[2025-01-16T07:57:45.261+0000] {processor.py:153} INFO - Started process (PID=2016) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:57:45.262+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:57:45.263+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:57:45.263+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:57:45.280+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:57:45.324+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:57:45.324+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:57:45.342+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:57:45.342+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:57:45.349+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.098 seconds
+[2025-01-16T07:58:15.504+0000] {processor.py:153} INFO - Started process (PID=2031) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:58:15.505+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:58:15.506+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:58:15.506+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:58:15.531+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:58:15.560+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:58:15.560+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:58:15.579+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:58:15.579+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:58:15.610+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.109 seconds
+[2025-01-16T07:58:45.823+0000] {processor.py:153} INFO - Started process (PID=2046) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:58:45.825+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:58:45.826+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:58:45.826+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:58:45.846+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:58:45.892+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:58:45.892+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:58:45.911+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:58:45.911+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:58:45.919+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.113 seconds
+[2025-01-16T07:59:16.151+0000] {processor.py:153} INFO - Started process (PID=2061) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:59:16.153+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:59:16.154+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:59:16.154+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:59:16.209+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:59:16.239+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:59:16.239+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:59:16.255+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:59:16.255+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:59:16.262+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.120 seconds
+[2025-01-16T07:59:46.400+0000] {processor.py:153} INFO - Started process (PID=2076) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:59:46.403+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T07:59:46.403+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:59:46.403+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:59:46.446+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T07:59:46.474+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:59:46.474+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T07:59:46.490+0000] {logging_mixin.py:115} INFO - [2025-01-16T07:59:46.490+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T07:59:46.497+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.101 seconds
+[2025-01-16T08:00:16.662+0000] {processor.py:153} INFO - Started process (PID=2091) to work on /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T08:00:16.664+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/P2M3_afif_makruf_DAG.py for tasks to queue
+[2025-01-16T08:00:16.665+0000] {logging_mixin.py:115} INFO - [2025-01-16T08:00:16.665+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T08:00:16.690+0000] {processor.py:650} INFO - DAG(s) dict_keys(['ETL_influencer_marchendise']) retrieved from /opt/airflow/dags/P2M3_afif_makruf_DAG.py
+[2025-01-16T08:00:16.731+0000] {logging_mixin.py:115} INFO - [2025-01-16T08:00:16.731+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2025-01-16T08:00:16.751+0000] {logging_mixin.py:115} INFO - [2025-01-16T08:00:16.750+0000] {dag.py:2981} INFO - Setting next_dagrun for ETL_influencer_marchendise to 2025-01-18T09:10:00+00:00, run_after=2025-01-18T09:20:00+00:00
+[2025-01-16T08:00:16.759+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/P2M3_afif_makruf_DAG.py took 0.104 seconds

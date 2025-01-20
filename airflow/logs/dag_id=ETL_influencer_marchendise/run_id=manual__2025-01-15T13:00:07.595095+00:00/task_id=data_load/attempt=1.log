@@ -1,0 +1,39 @@
+[2025-01-15T13:00:21.247+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: ETL_influencer_marchendise.data_load manual__2025-01-15T13:00:07.595095+00:00 [queued]>
+[2025-01-15T13:00:21.254+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: ETL_influencer_marchendise.data_load manual__2025-01-15T13:00:07.595095+00:00 [queued]>
+[2025-01-15T13:00:21.254+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2025-01-15T13:00:21.254+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 2
+[2025-01-15T13:00:21.254+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2025-01-15T13:00:21.261+0000] {taskinstance.py:1389} INFO - Executing <Task(BashOperator): data_load> on 2025-01-15 13:00:07.595095+00:00
+[2025-01-15T13:00:21.263+0000] {standard_task_runner.py:52} INFO - Started process 1520 to run task
+[2025-01-15T13:00:21.265+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'ETL_influencer_marchendise', 'data_load', 'manual__2025-01-15T13:00:07.595095+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/AirflowM3.py', '--cfg-path', '/tmp/tmpwcfv1s51', '--error-file', '/tmp/tmprgdqzg0j']
+[2025-01-15T13:00:21.266+0000] {standard_task_runner.py:80} INFO - Job 10: Subtask data_load
+[2025-01-15T13:00:21.296+0000] {task_command.py:371} INFO - Running <TaskInstance: ETL_influencer_marchendise.data_load manual__2025-01-15T13:00:07.595095+00:00 [running]> on host 85e61d7672fe
+[2025-01-15T13:00:21.329+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=afif
+AIRFLOW_CTX_DAG_ID=ETL_influencer_marchendise
+AIRFLOW_CTX_TASK_ID=data_load
+AIRFLOW_CTX_EXECUTION_DATE=2025-01-15T13:00:07.595095+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-01-15T13:00:07.595095+00:00
+[2025-01-15T13:00:21.330+0000] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2025-01-15T13:00:21.330+0000] {subprocess.py:74} INFO - Running command: ['/bin/bash', '-c', 'sudo -u *** python /opt/***/dags/load.py']
+[2025-01-15T13:00:21.334+0000] {subprocess.py:85} INFO - Output:
+[2025-01-15T13:00:22.581+0000] {subprocess.py:92} INFO - Traceback (most recent call last):
+[2025-01-15T13:00:22.583+0000] {subprocess.py:92} INFO -   File "/opt/***/dags/load.py", line 47, in <module>
+[2025-01-15T13:00:22.583+0000] {subprocess.py:92} INFO -     load_to_mongo(df)
+[2025-01-15T13:00:22.584+0000] {subprocess.py:92} INFO -   File "/opt/***/dags/load.py", line 30, in load_to_mongo
+[2025-01-15T13:00:22.584+0000] {subprocess.py:92} INFO -     db = client('p2m3')
+[2025-01-15T13:00:22.584+0000] {subprocess.py:92} INFO - TypeError: 'MongoClient' object is not callable
+[2025-01-15T13:00:22.677+0000] {subprocess.py:96} INFO - Command exited with return code 1
+[2025-01-15T13:00:22.687+0000] {taskinstance.py:1902} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 197, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-01-15T13:00:22.689+0000] {taskinstance.py:1412} INFO - Marking task as UP_FOR_RETRY. dag_id=ETL_influencer_marchendise, task_id=data_load, execution_date=20250115T130007, start_date=20250115T130021, end_date=20250115T130022
+[2025-01-15T13:00:22.697+0000] {standard_task_runner.py:97} ERROR - Failed to execute job 10 for task data_load (Bash command failed. The command returned a non-zero exit code 1.; 1520)
+[2025-01-15T13:00:22.725+0000] {local_task_job.py:156} INFO - Task exited with return code 1
+[2025-01-15T13:00:22.747+0000] {local_task_job.py:279} INFO - 0 downstream tasks scheduled from follow-on schedule check

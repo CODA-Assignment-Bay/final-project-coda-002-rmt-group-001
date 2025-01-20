@@ -1,0 +1,36 @@
+[2025-01-15T13:20:28.592+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: ETL_influencer_marchendise.data_transform manual__2025-01-15T13:20:21.172450+00:00 [queued]>
+[2025-01-15T13:20:28.598+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: ETL_influencer_marchendise.data_transform manual__2025-01-15T13:20:21.172450+00:00 [queued]>
+[2025-01-15T13:20:28.598+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2025-01-15T13:20:28.599+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 2
+[2025-01-15T13:20:28.599+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2025-01-15T13:20:28.607+0000] {taskinstance.py:1389} INFO - Executing <Task(BashOperator): data_transform> on 2025-01-15 13:20:21.172450+00:00
+[2025-01-15T13:20:28.613+0000] {standard_task_runner.py:52} INFO - Started process 875 to run task
+[2025-01-15T13:20:28.618+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'ETL_influencer_marchendise', 'data_transform', 'manual__2025-01-15T13:20:21.172450+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/P2M3_afif_makruf_DAG.py', '--cfg-path', '/tmp/tmpdsca_mzd', '--error-file', '/tmp/tmpe8zlicjp']
+[2025-01-15T13:20:28.619+0000] {standard_task_runner.py:80} INFO - Job 6: Subtask data_transform
+[2025-01-15T13:20:28.653+0000] {task_command.py:371} INFO - Running <TaskInstance: ETL_influencer_marchendise.data_transform manual__2025-01-15T13:20:21.172450+00:00 [running]> on host 4ef4ab5f1a4f
+[2025-01-15T13:20:28.690+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=afif
+AIRFLOW_CTX_DAG_ID=ETL_influencer_marchendise
+AIRFLOW_CTX_TASK_ID=data_transform
+AIRFLOW_CTX_EXECUTION_DATE=2025-01-15T13:20:21.172450+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-01-15T13:20:21.172450+00:00
+[2025-01-15T13:20:28.691+0000] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2025-01-15T13:20:28.691+0000] {subprocess.py:74} INFO - Running command: ['/bin/bash', '-c', 'sudo -u *** python /opt/***/dags/transform.py']
+[2025-01-15T13:20:28.695+0000] {subprocess.py:85} INFO - Output:
+[2025-01-15T13:20:29.512+0000] {subprocess.py:92} INFO - WARNING: An illegal reflective access operation has occurred
+[2025-01-15T13:20:29.513+0000] {subprocess.py:92} INFO - WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/home/***/.local/lib/python3.7/site-packages/pyspark/jars/spark-unsafe_2.12-3.1.2.jar) to constructor java.nio.DirectByteBuffer(long,int)
+[2025-01-15T13:20:29.513+0000] {subprocess.py:92} INFO - WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+[2025-01-15T13:20:29.513+0000] {subprocess.py:92} INFO - WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+[2025-01-15T13:20:29.513+0000] {subprocess.py:92} INFO - WARNING: All illegal access operations will be denied in a future release
+[2025-01-15T13:20:29.702+0000] {subprocess.py:92} INFO - 25/01/15 13:20:29 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2025-01-15T13:20:29.777+0000] {subprocess.py:92} INFO - Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+[2025-01-15T13:20:29.780+0000] {subprocess.py:92} INFO - Setting default log level to "WARN".
+[2025-01-15T13:20:29.780+0000] {subprocess.py:92} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2025-01-15T13:20:34.703+0000] {subprocess.py:96} INFO - Command exited with return code 0
+[2025-01-15T13:20:34.769+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=ETL_influencer_marchendise, task_id=data_transform, execution_date=20250115T132021, start_date=20250115T132028, end_date=20250115T132034
+[2025-01-15T13:20:34.794+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-01-15T13:20:34.844+0000] {local_task_job.py:279} INFO - 1 downstream tasks scheduled from follow-on schedule check
