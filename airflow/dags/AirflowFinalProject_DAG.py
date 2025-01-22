@@ -5,7 +5,7 @@ from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
 from airflow.operators.python_operator import PythonOperator
 
-path = '/opt/airflow/dags/'
+path = '/opt/airflow/scripts/'
 
 default_args = {
     'owner': 'Group_1',
@@ -17,7 +17,7 @@ default_args = {
 
 with DAG('data_pipeline_final_project',
         default_args=default_args,
-        schedule_interval='*/20 * * * *',
+        schedule_interval='0 1 * * *',
         catchup=False,
         ) as dag:
 
