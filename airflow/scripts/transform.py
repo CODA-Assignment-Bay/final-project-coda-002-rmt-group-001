@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, lit, concat, concat_ws, date_format, to_date, year, month, expr, when, udf
-from pyspark.sql.types import StringType, IntegerType, FloatType, DateType
+from pyspark.sql.functions import col, min, max, concat_ws, date_format, to_date, when, udf
+from pyspark.sql.types import StringType, FloatType, DateType
 import pyspark.sql.functions as F
 from datetime import datetime, timedelta
 from nltk.sentiment import SentimentIntensityAnalyzer
@@ -43,7 +43,7 @@ def add_sentiment_analysis(data1):
 
 def add_month_year_column_data1(data1, created_time_column="created_time", month_year_column="month_year"):
     
-    data1 = data1.withColumn(month_year_column, date_format(to_date(created_time_column), "yyyy-MM"))
+    data1 = data1.withColumn(month_year_column, date_format(to_date(created_time_column), "MM-yyyy"))
     
     return data1
 
@@ -93,13 +93,13 @@ def add_date_table():
 def data_cleaning(data1, data2, date_df):
     # Cleaning for data1
     # handling missing value in data1
-    data1_cleaned = data1.na.drop(subset=['post_id', 'post_title', 'comment_id', 'self_text', 'subreddit', 
+    data1_cleaned = data1.na.drop(subset=['post_id', 'score', 'post_title', 'comment_id', 'self_text', 'subreddit', 
                                         'author_name', 'month_year', 'sentiment_score', 'sentiment_label'])
     # kalau user is verified null maka isi jadi False
     data1_cleaned = data1_cleaned.fillna({'user_is_verified': False})
     data1_cleaned.dropDuplicates()
     
-    # Cleaning for data2
+
     # renamed column names
     data2_cleaned = data2.withColumnRenamed('Country','country')\
             .withColumnRenamed('Events','events')\
@@ -119,20 +119,21 @@ def data_cleaning(data1, data2, date_df):
     return data1_cleaned, data2_cleaned, date_df_cleaned
 
 
-
 if __name__ == '__main__':
 
     #Creating variable data as spark dataframe for anrgument in tarnsform function
-    path = '/opt/airflow/dags/'
+    path = '/opt/airflow/data/'
     
-    data1 = spark.read.csv(f'{path}reddit_opinion_PSE_ISR.csv', header=True, inferSchema=True)
-    data2 = spark.read.csv(f'{path}assault.csv', header=True, inferSchema=True)
+    data1 = spark.read.parquet(f'{path}data_reddit_raw')
+    data2 = spark.read.parquet(f'{path}data_assault_raw')
     
     # Tambahkan hasil sentiment analysis ke data1
     data1 = add_sentiment_analysis(data1)
     
     # Menambah kolom month_year ke data1
     data1 = add_month_year_column_data1(data1, created_time_column="created_time", month_year_column="month_year")
+
+    data1 = add_month_year_column_data1(data1, created_time_column="post_created_time", month_year_column="month_year_post")
 
     # Tambahkan kolom month_year ke data2
     data2 = add_month_year_column_data2(data2)
@@ -143,17 +144,35 @@ if __name__ == '__main__':
     # Cleaning data
     data1_cleaned, data2_cleaned, date_df_cleaned = data_cleaning(data1, data2, date_df)
     # memasukkan kolom yang mau dijadikan fact & dim table
-    fact_comment_columns = data1_cleaned.select("comment_id", "self_text", "subreddit","created_time",
-                                        "controversiality","score","author_name","post_id", "sentiment_score", "sentiment_label")
-    fact_assault_columns = data2_cleaned.select("country", "month_year", "events", "fatalities")
-    dim_user_columns = data1_cleaned.select("author_name", "user_is_verified", "user_account_created_time", "user_awardee_karma", 
-                                    "user_awarder_karma", "user_link_karma", "user_comment_karma", "user_total_karma").distinct() 
-    dim_post_columns = data1_cleaned.select("post_id", "post_score", "post_title", "post_self_text", "post_upvote_ratio", 
-                                    "post_thumbs_ups", "post_total_awards_received", "post_created_time", "month_year").distinct() 
-    dim_date_columns = date_df_cleaned.select("date", "month", "year", "month_year")
-    # Select columns for each new DataFrame
-    fact_comment_table = data1_cleaned.select(*fact_comment_columns)
-    fact_assault_table = data2_cleaned.select(*fact_assault_columns)
-    dim_user_table = data1_cleaned.select(*dim_user_columns)
-    dim_post_table = data1_cleaned.select(*dim_post_columns)
-    dim_date_table = date_df_cleaned.select(*dim_date_columns)
+    fact_comment_table = data1_cleaned.select("comment_id", "score", "self_text", "subreddit","created_time",
+                                        "controversiality","author_name","post_id", "month_year", "sentiment_score", "sentiment_label")
+    fact_assault_table = data2_cleaned.select("country", "month_year", "events", "fatalities")
+    # dim_user_columns = data1_cleaned.select("author_name", "user_is_verified", "user_account_created_time", "user_awardee_karma", 
+    #                                 "user_awarder_karma", "user_link_karma", "user_comment_karma", "user_total_karma").distinct() 
+    dim_user_table = data1_cleaned.groupBy("author_name")\
+    .agg(max("user_is_verified").alias("user_is_verified"),
+    min("user_account_created_time").alias("user_account_created_time"),
+    max("user_awardee_karma").alias("user_awardee_karma"),
+    max("user_awarder_karma").alias("user_awarder_karma"),
+    max("user_link_karma").alias("user_link_karma"),
+    max("user_comment_karma").alias("user_comment_karma"),
+    max("user_total_karma").alias("user_total_karma")
+    )
+    dim_post_table = data1_cleaned.groupBy(["post_id", "post_title", "post_self_text", "month_year_post"])\
+    .agg(max("post_score").alias("post_score"),
+    max("post_upvote_ratio").alias("post_upvote_ratio"),
+    max("post_thumbs_ups").alias("post_thumbs_ups"),
+    max("post_total_awards_received").alias("post_total_awards_received"),
+    min("post_created_time").alias("post_created_time")
+    )
+
+    dim_post_table = dim_post_table.withColumnRenamed('month_year_post','month_year')
+
+    dim_date_table = date_df_cleaned.select("date", "month", "year", "month_year")
+
+    # to csv
+    fact_comment_table.write.parquet(f'{path}fact_comment_table')
+    fact_assault_table.write.parquet(f'{path}fact_assault_table')
+    dim_user_table.write.parquet(f'{path}dim_user_table')
+    dim_post_table.write.parquet(f'{path}dim_post_table')
+    dim_date_table.write.parquet(f'{path}dim_date_table')

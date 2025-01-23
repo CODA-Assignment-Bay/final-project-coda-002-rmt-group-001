@@ -1,6 +1,5 @@
 import datetime as dt
 from datetime import timedelta
-
 from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
 from airflow.operators.python_operator import PythonOperator
@@ -25,11 +24,11 @@ with DAG('data_pipeline_final_project',
                             bash_command=f'sudo -u airflow python {path}/extract.py')
     transform = BashOperator(task_id='transform',
                             bash_command=f'sudo -u airflow python {path}/transform.py')
-    # validation = BashOperator(task_id='transform',
-    #                         bash_command=f'sudo -u airflow python {path}/validation.py')
-    # load = BashOperator(task_id='load',
-    #                         bash_command=f'sudo -u airflow python {path}/load.py')
+    # # validation = BashOperator(task_id='validation',
+    # #                         bash_command=f'sudo -u airflow python {path}/validation.py')
+    load = BashOperator(task_id='load',
+                            bash_command=f'sudo -u airflow python {path}/load.py')
 
-extract >> transform
-# >> validation >> load
+extract >> transform >> load
+# >> validation 
 
