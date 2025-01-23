@@ -7,6 +7,10 @@ from nltk.sentiment import SentimentIntensityAnalyzer
 import nltk
 
 spark = SparkSession.builder.getOrCreate()
+
+# Download the required lexicon
+nltk.download('vader_lexicon')
+
 # Initialize SentimentIntensityAnalyzer
 sia = SentimentIntensityAnalyzer()
 
@@ -123,9 +127,6 @@ if __name__ == '__main__':
     
     data1 = spark.read.csv(f'{path}reddit_opinion_PSE_ISR.csv', header=True, inferSchema=True)
     data2 = spark.read.csv(f'{path}assault.csv', header=True, inferSchema=True)
-
-    # Download the required lexicon
-    nltk.download('vader_lexicon')
     
     # Tambahkan hasil sentiment analysis ke data1
     data1 = add_sentiment_analysis(data1)
@@ -151,8 +152,8 @@ if __name__ == '__main__':
                                     "post_thumbs_ups", "post_total_awards_received", "post_created_time", "month_year").distinct() 
     dim_date_columns = date_df_cleaned.select("date", "month", "year", "month_year")
     # Select columns for each new DataFrame
-    fact_comment_table = data1.select(*fact_comment_columns)
-    fact_assault_table = data2.select(*fact_assault_columns)
-    dim_user_table = data1.select(*dim_user_columns)
-    dim_post_table = data1.select(*dim_post_columns)
-    dim_date_table = date_df.select(*dim_date_columns)
+    fact_comment_table = data1_cleaned.select(*fact_comment_columns)
+    fact_assault_table = data2_cleaned.select(*fact_assault_columns)
+    dim_user_table = data1_cleaned.select(*dim_user_columns)
+    dim_post_table = data1_cleaned.select(*dim_post_columns)
+    dim_date_table = date_df_cleaned.select(*dim_date_columns)

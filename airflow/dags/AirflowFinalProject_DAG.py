@@ -31,5 +31,5 @@ with DAG('data_pipeline_final_project',
     #                         bash_command=f'sudo -u airflow python {path}/load.py')
 
 extract >> transform
-# >> transform >> load
+# >> validation >> load
 
